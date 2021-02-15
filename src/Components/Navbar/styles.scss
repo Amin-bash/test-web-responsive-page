@@ -1,0 +1,130 @@
+.navbar-container {
+  width: 100%;
+  padding-top: 64px;
+  margin: 0 99px;
+
+  .MuiPaper-elevation4 {
+    box-shadow: unset;
+  }
+
+  .MuiAppBar-colorPrimary {
+    background-color: transparent;
+  }
+
+  .nav-menu-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .MuiTabs-root {
+      display: inline;
+      // margin-right: 13px;
+    }
+
+    .MuiButtonBase-root {
+      font-family: Montserrat;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 29px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #CBB1A2;
+    }
+
+    .Mui-selected {
+      color: #6749A5;
+
+      .MuiTouchRipple-root::after {
+        content: '';
+        border-bottom: 4px solid #6749A5;
+        width: 24px;
+        margin: 45px auto;
+        display: block;
+      }
+    }
+
+    .PrivateTabIndicator-root-4 {
+      display: none;
+    }
+
+    h1 {
+      font-family: Montserrat;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 59px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #000000;
+      // margin-left: 99px;
+    }
+
+  }
+}
+
+
+@media(max-width: 1200px) {
+  .navbar-container {
+    .nav-menu-section {
+      h1 {
+        font-size: 35px;
+      }
+
+      .MuiButtonBase-root {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media(max-width: 1000px) {
+  .navbar-container {
+    padding-top: 24px;
+    margin: 0 40px;
+    .nav-menu-section {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .MuiTabs-root {
+        margin-left: -34px;
+      }
+    }
+  }
+}
+
+@media(max-width: 700px) {
+  .navbar-container {
+    .nav-menu-section{
+
+      .Mui-selected {
+        .MuiTouchRipple-root::after {
+          border-bottom: 2px solid #6749A5;
+          margin: 35px auto;
+        }
+      }
+      h1 {
+        font-size: 30px;
+        margin: 0;
+      }
+      .MuiButtonBase-root {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media(max-width: 610px) {
+  .navbar-container {
+    margin: 0 10px;
+    .nav-menu-section {
+      .MuiTabs-root {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+
+
